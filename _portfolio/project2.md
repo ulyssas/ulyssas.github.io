@@ -1,18 +1,20 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
-image: assets/img/portfolio/02-full.jpg
-alt: Keep Exploring
+title: Randomizer
+subtitle: Randomly picks number from given range
+image: assets/img/portfolio/02-full.png
+alt: ios app icon
 
 caption:
-  title: Explore
-  subtitle: Graphic Design
-  thumbnail: assets/img/portfolio/02-thumbnail.jpg
+  title: Randomizer
+  subtitle: iOS App
+  thumbnail: assets/img/portfolio/02-thumbs.png
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+Randomizer was made to provide better random number generator with better experience. The development has always focused on its UI.
+It features iOS native design, CSV name list support and proper landscape mode.
 
 {:.list-inline}
-- Date: January 2017
-- Client: Explore
-- Category: Graphic Design
+- Date: Early 2024
+- Language: Swift/Swift UI
+- [link]
 
+[link]: https://ulyssas.github.io/Rndsite/

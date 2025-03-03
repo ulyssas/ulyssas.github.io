@@ -1,18 +1,21 @@
 ---
-title: Project Threads
-subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-image: assets/img/portfolio/01-full.jpg
-alt: Shirts on a hanger
+title: Display Motion Creator
+subtitle: MMD motion generator for MMDElectone
+image: assets/img/portfolio/01-full.png
+alt: electone icon
 
 caption:
-  title: Threads
-  subtitle: Illustration
-  thumbnail: assets/img/portfolio/01-thumbnail.jpg
+  title: DMC
+  subtitle: file generation
+  thumbnail: assets/img/portfolio/01-thumbs.png
 ---
-Use this area to describe your project. **Markdown** supported. This entry (project1.md) uses links for the image sources. All other projects in the portfolio use local images. Both work just fine! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+DisplayMotionCreator(or DMC) is developed to complement my other project, MMDElectone. MMDElectone is series of Electone MMD models.
+DMC allows MMDElectone to automate its tempo screen so that hopefully final render look a little bit nicer.
 
 {:.list-inline}
-- Date: January 2017
-- Client: Threads
-- Category: Illustration
+- Date: January 2024
+- Language: Python/C#
+- [link]
+
+[link]: https://github.com/ulyssas/DisplayMotionCreatorCore
 

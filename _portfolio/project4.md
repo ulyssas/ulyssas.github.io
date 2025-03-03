@@ -1,18 +1,21 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
-image: assets/img/portfolio/04-full.jpg
-alt: 
+title: extension-curve
+subtitle: Linearity Curve / Vectornator Extension for Inkscape
+image: assets/img/portfolio/04-full.png
+alt: marker
 
 caption:
-  title: Lines
-  subtitle: Branding
-  thumbnail: assets/img/portfolio/04-thumbnail.jpg
+  title: extension-curve
+  subtitle: file format
+  thumbnail: assets/img/portfolio/04-thumbs.png
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+extension-curve tries to implement native format of Vectornator / Linearity Curve, so that Inkscape can directly open such files.
+It already works great and offers support for wide range of files, but still actively in development.
 
 {:.list-inline}
-- Date: October 2019
-- Client: Lines
-- Category: Branding
+- Date: Early 2025
+- Language: Python
+- [link]
+
+[link]: https://gitlab.com/WimPum/extension-curve
 

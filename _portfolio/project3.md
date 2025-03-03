@@ -1,18 +1,21 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
-image: assets/img/portfolio/03-full.jpg
-alt: 
+title: Analog Timer
+subtitle: An iOS timer app with clock-like interface
+image: assets/img/portfolio/03-full.png
+alt: ios app icon
 
 caption:
-  title: Finish
-  subtitle: Identity
-  thumbnail: assets/img/portfolio/03-thumbnail.jpg
+  title: Analog Timer
+  subtitle: iOS / iPadOS App
+  thumbnail: assets/img/portfolio/03-thumbs.png
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+AnalogTimer is my second iOS app project. It has responsive UI thanks to SwiftUI's GeometryReader, and the clock-like interface is unique to this app.
+It also has stopwatch built in, which works just like any analog clock.
 
 {:.list-inline}
-- Date: January 2017
-- Client: Finish
-- Category: Identity
+- Date: Late 2024
+- Language: Swift/Swift UI
+- [link]
+
+[link]: https://github.com/ulyssas/AnalogTimer
 
