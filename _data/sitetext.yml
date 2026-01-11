@@ -17,8 +17,8 @@ en: &DEFAULT_EN
     buttonlink: "#about"
 
   portfolio:
-    title: "Portfolio"
-    text: "Here's some of my work." #
+    title: "Projects"
+    text: "Here are some of my works."
     section: portfolio
     closebutton: "Close"
 
@@ -26,7 +26,7 @@ en: &DEFAULT_EN
     title: "About Me"
     text: "who am i?"
     body: >
-      Hi there! I try to make many kinds of stuffs. My primary programming language is Python, but I can write Swift and C# as well.
+      Hi there! I make many kinds of stuffs. My primary programming language is Python, but I have used Swift and C# in the past.
       Also, I have made several 3D models using Blender, and I enjoy playing the piano.
     section: about
 
