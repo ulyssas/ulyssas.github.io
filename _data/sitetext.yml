@@ -37,6 +37,11 @@ en: &DEFAULT_EN
         description: Added Humanoid rig generator & Humanoid Renamer
         link: https://github.com/MMD-Blender/blender_mmd_tools_append/pull/170
 
+      - date: 2026-02-14
+        name: "sdPBR_readme_en"
+        description: Published English translation for sdPBR readme (partial) [source](https://github.com/ulyssas/sdPBR_readme_en)
+        link: https://ulyssas.github.io/sdPBR_readme_en/readme.html
+
       - date: 2026-01-13
         name: "MMD Tools"
         description: Added Display Frame unlocker
@@ -51,6 +56,11 @@ en: &DEFAULT_EN
         name: "Inkscape"
         description: Updated Japanese UI translation
         link: https://translate.inkscape.org/user/WimPum/#changes
+
+      - date: 2025-12-02
+        name: "extension-curve"
+        description: Added Gradient Text support
+        link: https://gitlab.com/inkscape/extras/extension-curve/-/merge_requests/9
 
       - date: 2025-11-29
         name: "MMD Tools"
@@ -96,6 +106,16 @@ en: &DEFAULT_EN
         name: "MMD Tools"
         description: Add CSV Import/Export to Global Translation Popup
         link: https://github.com/MMD-Blender/blender_mmd_tools/pull/247
+
+      - date: 2025-06-29
+        name: "extension-curve"
+        description: Added PowerStroke support
+        link: https://gitlab.com/inkscape/extras/extension-curve/-/merge_requests/5
+
+      - date: 2025-06-10
+        name: "extension-curve"
+        description: Added text stroke and decoration support
+        link: https://gitlab.com/inkscape/extras/extension-curve/-/merge_requests/4
 
       - date: 2025-05-29
         name: "BrightIntosh"

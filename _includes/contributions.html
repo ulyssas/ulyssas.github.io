@@ -15,7 +15,7 @@
         <div class="col-lg-10 mx-auto">
           <ul class="timeline-3">
             <!-- Display first 3 normally -->
-            {% for project in site.data.sitetext[site.locale].contributions.list limit:3 %}
+            {% for project in site.data.sitetext[site.locale].contributions.list limit:4 %}
             {% if project.date %}
             <li>
               <div>
@@ -23,7 +23,7 @@
                   <h4>
                     {% if project.link %}<a href="{{ project.link }}">{{ project.name }}</a>{% else %}<span>{{ project.name }}</span>{% endif %}
                   </h4>
-                  <p class="large text-muted">{{ project.description }}</p>
+                  <p class="large text-muted">{{ project.description | markdownify }}</p>
                 </div>
                 <div>
                   <p class="small text-muted">{{ project.date }}</p>
@@ -34,7 +34,7 @@
             {% endfor %}
 
             <!-- collapse the rest -->
-            {% for project in site.data.sitetext[site.locale].contributions.list offset:3 %}
+            {% for project in site.data.sitetext[site.locale].contributions.list offset:4 %}
             {% if project.date %}
             <li class="collapse multi-collapse-contributions">
               <div>
@@ -42,7 +42,7 @@
                   <h4>
                     {% if project.link %}<a href="{{ project.link }}">{{ project.name }}</a>{% else %}<span>{{ project.name }}</span>{% endif %}
                   </h4>
-                  <p class="large text-muted">{{ project.description }}</p>
+                  <p class="large text-muted">{{ project.description | markdownify }}</p>
                 </div>
                 <div>
                   <p class="small text-muted">{{ project.date }}</p>
@@ -54,7 +54,7 @@
           </ul>
 
           <!-- toggle collapse -->
-          {% if site.data.sitetext[site.locale].contributions.list.size > 3 %}
+          {% if site.data.sitetext[site.locale].contributions.list.size > 4 %}
           <div class="text-center mt-3">
             <button class="btn btn-primary toggle-more-btn" type="button" data-toggle="collapse" data-target=".multi-collapse-contributions" aria-expanded="false">
               <span class="text-closed">Show more</span>
@@ -83,8 +83,8 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <ul class="timeline-3">
-          <!-- Display first 3 normally -->
-          {% for project in site.data.sitetext[site.locale].contributions.list limit:3 %}
+          <!-- Display first 4 normally -->
+          {% for project in site.data.sitetext[site.locale].contributions.list limit:4 %}
           {% if project.date %}
           <li>
             <div>
@@ -92,7 +92,7 @@
                 <h4>
                   {% if project.link %}<a href="{{ project.link }}">{{ project.name }}</a>{% else %}<span>{{ project.name }}</span>{% endif %}
                 </h4>
-                <p class="large text-muted">{{ project.description }}</p>
+                <p class="large text-muted">{{ project.description | markdownify }}</p>
               </div>
               <div>
                 <p class="small text-muted">{{ project.date }}</p>
@@ -103,7 +103,7 @@
           {% endfor %}
 
           <!-- collapse the rest -->
-          {% for project in site.data.sitetext[site.locale].contributions.list offset:3 %}
+          {% for project in site.data.sitetext[site.locale].contributions.list offset:4 %}
           {% if project.date %}
           <li class="collapse multi-collapse-contributions">
             <div>
@@ -111,7 +111,7 @@
                 <h4>
                   {% if project.link %}<a href="{{ project.link }}">{{ project.name }}</a>{% else %}<span>{{ project.name }}</span>{% endif %}
                 </h4>
-                <p class="large text-muted">{{ project.description }}</p>
+                <p class="large text-muted">{{ project.description | markdownify }}</p>
               </div>
               <div>
                 <p class="small text-muted">{{ project.date }}</p>
@@ -123,7 +123,7 @@
         </ul>
 
         <!-- toggle collapse -->
-        {% if site.data.sitetext[site.locale].contributions.list.size > 3 %}
+        {% if site.data.sitetext[site.locale].contributions.list.size > 4 %}
         <div class="text-center mt-3">
           <button class="btn btn-primary toggle-more-btn" type="button" data-toggle="collapse" data-target=".multi-collapse-contributions" aria-expanded="false">
             <span class="text-closed">Show more</span>
