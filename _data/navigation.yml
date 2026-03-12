@@ -13,6 +13,8 @@ en: &DEFAULT_EN
   nav:
     - title: "Portfolio"
       section: portfolio
+    - title: "Contributions"
+      section: contributions
     - title: "About"
       section: about
 
