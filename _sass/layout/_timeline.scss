@@ -1,0 +1,51 @@
+// from https://mdbootstrap.com/docs/standard/extended/timeline/#section-timeline-latest-news
+
+ul.timeline-3 {
+  list-style-type: none;
+  position: relative;
+  /* ↓ 追加: ulが元々持っている左の余白をなくし、基準を左端にピタッと合わせる */
+  padding-left: 0;
+}
+ul.timeline-3:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px; /* 線はコンテナの左から29pxの位置 */
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline-3 > li {
+  /* margin を padding にしてトランジションのガタつきを防ぐ */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  position: relative;
+  
+  /* ↓ 変更: 丸とテキストが被らないように、テキストの開始位置を60pxにズラす */
+  padding-left: 60px;
+}
+ul.timeline-3 > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid $primary;
+  
+  /* ↓ 基準が直ったので、これで線（29px）のど真ん中を丸が貫くようになります */
+  left: 20px;
+  top: 20px;
+  
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+/* ボタンが閉じている状態（aria-expanded="false"）のとき */
+.toggle-more-btn[aria-expanded="false"] .text-closed { display: inline; }
+.toggle-more-btn[aria-expanded="false"] .text-opened { display: none; }
+
+/* ボタンが開いている状態（aria-expanded="true"）のとき */
+.toggle-more-btn[aria-expanded="true"] .text-closed { display: none; }
+.toggle-more-btn[aria-expanded="true"] .text-opened { display: inline; }
