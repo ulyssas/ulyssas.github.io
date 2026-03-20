@@ -57,6 +57,11 @@ en: &DEFAULT_EN
         description: Updated Japanese UI translation
         link: https://translate.inkscape.org/user/WimPum/#changes
 
+      - date: 2025-12-13
+        name: "Inkscape"
+        description: Add mojibake extension
+        link: https://gitlab.com/inkscape/extensions/-/merge_requests/715
+
       - date: 2025-12-02
         name: "extension-curve"
         description: Added Gradient Text support
@@ -163,4 +168,3 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
