@@ -11,6 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
+    - title: "My Tutorials"
+      url: https://ulyssas.github.io/my_tutorials/
     - title: "Portfolio"
       section: portfolio
     - title: "Contributions"
