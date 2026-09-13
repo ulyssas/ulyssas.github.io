@@ -1,0 +1,95 @@
+/* --- SCSS Fix --- */
+
+.code-block-container {
+  position: relative;
+  background-color: #1e1e24;
+  border: 1px solid #343a40;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow: hidden; /* スクロールバーが角丸からはみ出るのを防ぐ */
+
+  // Jekyll/Rouge が自動生成する外枠のスタイルをリセット
+  div.highlighter-rouge,
+  div.highlight,
+  figure.highlight {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    overflow: visible !important; /* 外側でスクロールさせない */
+  }
+
+  // 実際にスクロールさせるのは pre だけ
+  pre {
+    margin: 0 !important;
+    padding: 1.2rem 4rem 1.2rem 1.2rem !important; /* 右側にボタン用の隙間 */
+    background: transparent !important;
+    border: none !important;
+    overflow-x: auto !important;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #f8f9fa;
+
+    code {
+      background: transparent !important;
+      color: inherit !important;
+      padding: 0 !important;
+      white-space: pre !important;
+    }
+
+    // スクロールバーのデザイン
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #1e1e24;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #3e444a;
+      border-radius: 4px;
+    }
+  }
+}
+
+// コピーボタン
+.clipboard-copy-button {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #adb5bd !important;
+  background-color: #2b3035 !important; /* 不透明色で固定 */
+  border: 1px solid #495057 !important;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 10;
+
+  // Bootstrap等の focus/active 時の透明化をブロック
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none !important;
+    background-color: #3e444a !important;
+    color: #ffffff !important;
+  }
+
+  i.copied {
+    display: none;
+  }
+
+  // コピー完了時の緑背景
+  &.copied {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #ffffff !important;
+
+    i.fa-copy {
+      display: none;
+    }
+    i.copied {
+      display: inline-block;
+    }
+  }
+}
